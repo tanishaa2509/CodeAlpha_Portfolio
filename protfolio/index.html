@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tanisha — Personal Portfolio</title>
+  <meta name="description" content="Tanisha's personal portfolio — projects, skills, resume and contact." />
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden>TA</div>
+        <div>
+          <div style="font-weight:800">Tanisha</div>
+          <div class="muted" style="font-size:.9rem">Frontend Developer & Designer</div>
+        </div>
+      </div>
+
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="card intro fade-in">
+        <h1>Hi — I'm Tanisha.</h1>
+        <p>I'm a developer who builds clean, responsive web experiences. I love JavaScript, HTML, accessible UI and delightful micro-interactions.</p>
+        <div class="row" style="margin-bottom:12px">
+          <span class="tag">Open to work</span>
+          <span class="muted">&nbsp;•&nbsp; Based in India</span>
+        </div>
+
+        <div class="skills" aria-hidden>
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">React</div>
+          <div class="skill">Responsive</div>
+        </div>
+
+        <div style="margin-top:16px" class="cta">
+          <a class="btn btn-primary" href="#contact">Hire me</a>
+          <a class="btn" href="#projects">See work</a>
+          <a class="btn download-resume" href="/resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+
+      <aside class="card profile-card fade-in" aria-labelledby="profile-heading">
+        <div id="profile-heading" style="font-weight:800">About Tanisha</div>
+        <div class="avatar">
+  <img src="images/tanusimg.jpg" alt="Tanisha Aamga">
+</div>
+
+        <div class="muted">A passionate developer focused on front-end and UX. I enjoy turning ideas into performant, accessible websites.</div>
+        <div style="margin-top:6px">
+          <a class="btn" href="#contact">Contact </a>
+        </div>
+      </aside>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project card fade-in" tabindex="0" aria-labelledby="p1">
+          <div class="meta">
+            <strong id="p1">Portfolio Template</strong>
+            <span class="muted">2025</span>
+          </div>
+          <p class="muted">A single-file responsive portfolio (this site) with smooth-scroll, animations, and an accessible contact form.</p>
+          <div style="margin-top:12px" class="row">
+            <a class="btn" href="#" aria-label="View project">Live</a>
+            <a class="btn" href="#" aria-label="View source">Source</a>
+          </div>
+        </article>
+
+        <article class="project card fade-in" tabindex="0" aria-labelledby="p2">
+          <div class="meta">
+            <strong id="p2">Image Gallery</strong>
+            <span class="muted">2025</span>
+          </div>
+          <p class="muted">a modern, responsive image gallery with filtering , lightbox effect,and lazy loading for smooth performance</p>
+        </article>
+
+        <article class="project card fade-in" tabindex="0" aria-labelledby="p3">
+          <div class="meta">
+            <strong id="p3">AI Health Wellness</strong>
+            <span class="muted">2025</span>
+          </div>
+          <p class="muted">An AI-powered health and wellness app that provides personalized ,nutrition, and wellness recommendations.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" style="margin-top:20px">
+      <h2 class="section-title">Skills & Tools</h2>
+      <div class="card fade-in">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+          <div>
+            <h4 style="margin:0 0 6px">Languages</h4>
+            <p class="muted" style="margin:0">HTML, CSS, JavaScript, TypeScript (learning)</p>
+          </div>
+          <div>
+            <h4 style="margin:0 0 6px">Tools</h4>
+            <p class="muted" style="margin:0">Git, VSCode, Chrome DevTools, Netlify, GitHub Pages</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" style="margin-top:20px">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+
+        <div class="card fade-in">
+          <p class="muted">Want to work together? Send me a message or email directly at <a href="mailto:tanishaaamga@gmail.com" style="color:var(--accent);text-decoration:underline">tanishaaamga@gmail.com</a></p>
+          <p class="muted">or reach me <a href="tel: +919753083319">+919753083319</a></p>
+          <form id="contactForm" onsubmit="return handleContact(event)" aria-label="Contact form">
+            <label for="name">Name</label>
+            <input id="name" name="Tanisha" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="tanishaaamga@gmail.com" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <div style="margin-top:8px;display:flex;gap:8px">
+              <button class="btn btn-primary" type="submit">Send</button>
+              <button class="btn" type="reset">Reset</button>
+            </div>
+
+            <div id="formStatus" aria-live="polite" style="margin-top:10px;color:var(--muted)"></div>
+          </form>
+        </div>
+
+        <aside class="card fade-in">
+          <h4 style="margin-top:0">Other ways to reach me</h4>
+          <p class="muted">LinkedIn: <a href="https://www.linkedin.com/in/tanisha-aamga-645642290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="color:var(--accent)">/in/tanisha</a></p>
+          <p class="muted">GitHub: <a href="https://github.com/tanishaa2509" style="color:var(--accent)">/tanisha</a></p>
+
+          <h4 style="margin-top:12px">Availability</h4>
+          <p class="muted">Open for internships, freelance and full‑time roles.</p>
+        </aside>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="muted">© <span id="year"></span> Tanisha — Built with ❤</div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+
+  
+</body>
+</html>
